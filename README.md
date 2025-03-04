@@ -1,19 +1,3 @@
-## Todos solitos :(
-
-```javascript
-// Selects all select elements with attribute _ngcontent-mao-c93 and sets them to '3'
-const selects = document.querySelectorAll('[_ngcontent-mao-c93] select');
-
-selects.forEach(select => {
-    // Set value to '3'
-    select.value = '3';
-    
-    // Dispatch events to notify Angular about the changes
-    select.dispatchEvent(new Event('change', { bubbles: true }));
-    select.dispatchEvent(new Event('input', { bubbles: true }));
-});
-```
-
 ## Economic Information
 
 ```javascript
@@ -58,6 +42,22 @@ inputs.forEach(input => {
     }
     // Trigger input event
     input.dispatchEvent(new Event('input', { bubbles: true }));
+});
+```
+
+## Todos solitos :(
+
+```javascript
+// Selects all select elements with attribute _ngcontent-mao-c93 and sets them to '3'
+const selects = document.querySelectorAll('[_ngcontent-mao-c93] select');
+
+selects.forEach(select => {
+    // Set value to '3'
+    select.value = '3';
+    
+    // Dispatch events to notify Angular about the changes
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+    select.dispatchEvent(new Event('input', { bubbles: true }));
 });
 ```
 
