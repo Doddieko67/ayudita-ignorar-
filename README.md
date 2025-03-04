@@ -1,3 +1,29 @@
+## Coacalco 
+```javascript
+// Seleccionar todos los <ng-select> con el atributo [_ngcontent-mao-c84]
+const ngSelects = document.querySelectorAll('[_ngcontent-mao-c84] ng-select');
+ngSelects.forEach(ngSelect => {
+    const input = ngSelect.querySelector('input'); // El input interno del ng-select
+
+    if (ngSelect.id === 'municipio') {
+        if (input) {
+            input.value = '15020 - COACALCO DE BERRIOZABAL';
+        }
+    } else if (ngSelect.id === 'localidad') {
+        if (input) {
+            input.value = '150200001 - SAN FRANCISCO COACALCO';
+        }
+    } else if (ngSelect.id === 'colonia') {
+        if (input) {
+            input.value = '5002000792 - UNIDAD HABITACIONAL SAN RAFAEL';
+        }
+    }
+    input.dispatchEvent(new Event('change', { bubbles: true }));
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+});
+```
+
+
 ## Economic Information
 
 ```javascript
