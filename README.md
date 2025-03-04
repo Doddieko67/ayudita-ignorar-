@@ -1,15 +1,4 @@
-# Form Automation Scripts
-
-This repository contains JavaScript snippets for automating form filling in an Angular application. Each script targets specific form sections through ngcontent attributes.
-
-## Table of Contents
-- [Selection Helper](#selection-helper)
-- [Form Elaboration](#form-elaboration)
-- [Economic Information](#economic-information)
-- [Housing Information](#housing-information)
-
-## Selection Helper
-Use this script to set all select elements to a specific value (in this case '3'):
+## Todos solitos :(
 
 ```javascript
 // Selects all select elements with attribute _ngcontent-mao-c93 and sets them to '3'
@@ -25,41 +14,7 @@ selects.forEach(select => {
 });
 ```
 
-## Form Elaboration
-Script to fill out the form elaboration section with prepopulated data:
-
-```javascript
-// Selects and fills all select elements with attribute _ngcontent-mao-c94
-const selects = document.querySelectorAll('[_ngcontent-mao-c94] select');
-selects.forEach(select => {
-    if (select.id === 'quienElaboro') {
-        select.value = '2'; // DIRECTOR REGIONAL
-    } else if (select.id === 'tieneFirma') {
-        select.value = '1'; // SÍ
-    }
-    // Trigger change event
-    select.dispatchEvent(new Event('change', { bubbles: true }));
-});
-
-// Selects and fills all input elements with attribute _ngcontent-mao-c94
-const inputs = document.querySelectorAll('[_ngcontent-mao-c94] input');
-inputs.forEach(input => {
-    if (input.id === 'idElaboro') {
-        input.value = '111985';
-    } else if (input.id === 'nombreElaboro') {
-        input.value = 'TANIA';
-    } else if (input.id === 'primerApellido') {
-        input.value = 'TAPIA';
-    } else if (input.id === 'segundoApellido') {
-        input.value = ''; // No value provided
-    }
-    // Trigger input event
-    input.dispatchEvent(new Event('input', { bubbles: true }));
-});
-```
-
 ## Economic Information
-Script to fill out economic information section:
 
 ```javascript
 // Selects and fills all select elements with attribute _ngcontent-mao-c88
@@ -106,8 +61,7 @@ inputs.forEach(input => {
 });
 ```
 
-## Housing Information
-Script to fill out housing information (partial due to truncation in the source):
+## La viviendaaaaa
 
 ```javascript
 // Selects and fills all select elements with attribute _ngcontent-mao-c86
@@ -132,6 +86,40 @@ selects.forEach(select => {
     select.dispatchEvent(new Event('change', { bubbles: true }));
 });
 ```
+
+## Taniaaaa tapiaaa
+Script to fill out the form elaboration section with prepopulated data:
+
+```javascript
+// Selects and fills all select elements with attribute _ngcontent-mao-c94
+const selects = document.querySelectorAll('[_ngcontent-mao-c94] select');
+selects.forEach(select => {
+    if (select.id === 'quienElaboro') {
+        select.value = '2'; // DIRECTOR REGIONAL
+    } else if (select.id === 'tieneFirma') {
+        select.value = '1'; // SÍ
+    }
+    // Trigger change event
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+});
+
+// Selects and fills all input elements with attribute _ngcontent-mao-c94
+const inputs = document.querySelectorAll('[_ngcontent-mao-c94] input');
+inputs.forEach(input => {
+    if (input.id === 'idElaboro') {
+        input.value = '111985';
+    } else if (input.id === 'nombreElaboro') {
+        input.value = 'TANIA';
+    } else if (input.id === 'primerApellido') {
+        input.value = 'TAPIA';
+    } else if (input.id === 'segundoApellido') {
+        input.value = ''; // No value provided
+    }
+    // Trigger input event
+    input.dispatchEvent(new Event('input', { bubbles: true }));
+});
+```
+
 
 ## Usage Instructions
 
