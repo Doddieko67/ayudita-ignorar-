@@ -1,5 +1,4 @@
-## Economic Information
-
+## TODO EN UNO SOLOOO :))))
 ```javascript
 // Selects and fills all select elements with attribute _ngcontent-mao-c88
 const selects = document.querySelectorAll('[_ngcontent-mao-c88] select');
@@ -43,11 +42,7 @@ inputs.forEach(input => {
     // Trigger input event
     input.dispatchEvent(new Event('input', { bubbles: true }));
 });
-```
 
-## Todos solitos :(
-
-```javascript
 // Selects all select elements with attribute _ngcontent-mao-c93 and sets them to '3'
 const selects = document.querySelectorAll('[_ngcontent-mao-c93] select');
 
@@ -59,11 +54,7 @@ selects.forEach(select => {
     select.dispatchEvent(new Event('change', { bubbles: true }));
     select.dispatchEvent(new Event('input', { bubbles: true }));
 });
-```
 
-## La viviendaaaaa
-
-```javascript
 // Selects and fills all select elements with attribute _ngcontent-mao-c86
 const selects = document.querySelectorAll('[_ngcontent-mao-c86] select');
 selects.forEach(select => {
@@ -85,12 +76,7 @@ selects.forEach(select => {
     // Trigger change event
     select.dispatchEvent(new Event('change', { bubbles: true }));
 });
-```
 
-## Ocio, violencia, observacion y Taniaaaa tapiaaa
-Script to fill out the form elaboration section with prepopulated data:
-
-```javascript
 // Paso 1: Marcar solo "MANUALIDADES" en el formulario de actividades (_ngcontent-mao-c90)
 const inputsC90 = document.querySelectorAll('[_ngcontent-mao-c90] input');
 inputsC90.forEach(input => {
@@ -186,7 +172,9 @@ setTimeout(() => {
 }, 1000); // Tiempo antes de ir al formulario de violencia
 ```
 
-## TODO EN UNO SOLOOO :))))
+
+## Economic Information
+
 ```javascript
 // Selects and fills all select elements with attribute _ngcontent-mao-c88
 const selects = document.querySelectorAll('[_ngcontent-mao-c88] select');
@@ -230,7 +218,11 @@ inputs.forEach(input => {
     // Trigger input event
     input.dispatchEvent(new Event('input', { bubbles: true }));
 });
+```
 
+## Todos solitos :(
+
+```javascript
 // Selects all select elements with attribute _ngcontent-mao-c93 and sets them to '3'
 const selects = document.querySelectorAll('[_ngcontent-mao-c93] select');
 
@@ -242,7 +234,11 @@ selects.forEach(select => {
     select.dispatchEvent(new Event('change', { bubbles: true }));
     select.dispatchEvent(new Event('input', { bubbles: true }));
 });
+```
 
+## La viviendaaaaa
+
+```javascript
 // Selects and fills all select elements with attribute _ngcontent-mao-c86
 const selects = document.querySelectorAll('[_ngcontent-mao-c86] select');
 selects.forEach(select => {
@@ -264,7 +260,12 @@ selects.forEach(select => {
     // Trigger change event
     select.dispatchEvent(new Event('change', { bubbles: true }));
 });
+```
 
+## Ocio, violencia, observacion y Taniaaaa tapiaaa
+Script to fill out the form elaboration section with prepopulated data:
+
+```javascript
 // Paso 1: Marcar solo "MANUALIDADES" en el formulario de actividades (_ngcontent-mao-c90)
 const inputsC90 = document.querySelectorAll('[_ngcontent-mao-c90] input');
 inputsC90.forEach(input => {
